@@ -22,6 +22,14 @@ class Topic:
         self.description = description
 
 
+class Comment:
+    def __init__(self, text, up_votes, down_votes, moderated):
+        self.text = text
+        self.up_votes = up_votes
+        self.down_votes = down_votes
+        self.moderated = moderated
+
+
 sarah = User(99, 0, 0, True, True)
 sarah.post_topic(
     "smoothies",
